@@ -15,7 +15,7 @@ class Autentificador
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if (dd($request->header("Autorization") !== "123")) {
+        if (($request->header("Autorization") !== "123")) {
             return response("mal", 401);
         }
         // dd($request->header("Autorization")); // var_dump($request); die;

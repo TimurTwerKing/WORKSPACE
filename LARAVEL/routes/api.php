@@ -14,7 +14,7 @@ Route::controller(SnackController::class)->prefix("/snacks")->group(function () 
     Route::get("{id}", "getById");
     Route::get("", "getAll");
     Route::post("", "create");
-    Route::patch("{id}", "modify");
+    Route::patch("{id}", "update");
     Route::delete("{id}", "delete")->middleware(Autentificador::class);
 });
 
@@ -26,14 +26,11 @@ Route::get("/snacks/{id}", function ($id) {
 
 Route::get("/snacks", [SnackController::class, "getAll"]);
 
-Route::post("/snacks", function () {
-    return "Gracias por los snacks";
-});
 
 Route::patch("/snacks", function () {
     return "Snacks modificados";
 });
 
-Route::delete("/snacks", function () {
-    return "Pues ya no quedan snacks";
-});
+// Route::delete("/snacks", function () {
+//     return "Pues ya no quedan snacks";
+// });
