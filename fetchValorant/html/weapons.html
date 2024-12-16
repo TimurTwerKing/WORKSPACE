@@ -6,13 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="../js/nav.js" defer></script>
-    <title>Document</title>
+    <title>Valorant Weapons</title>
 </head>
 
-<body>
-    <div id="weapon-images" class="flex flex-wrap space-x-4"></div>
-    <div id="video-container" class="mt-4"></div>
-    <script src="../js/weapons.js"></script>
+<body class="bg-gray-900 text-white font-sans"
+    style="background-image: url('../img/weapons.png'); background-attachment: fixed;">
+
+    <!-- Contenedor Principal -->
+    <section class="bg-gray-800 rounded-xl p-8 max-w-screen-xl mx-auto my-10 shadow-xl">
+
+        <!-- Layout Responsive -->
+        <section class="grid grid-cols-5 md:grid-cols-3 gap-6">
+
+            <!-- Weapons -->
+            <article class="bg-gray-900 p-6 rounded-xl shadow-lg">
+                <h2 class="text-3xl font-bold mb-6 text-teal-300 text-center">Weapons</h2>
+
+                <table id="tablaElementos" class="w-full border-collapse rounded-lg shadow-lg table-auto">
+                    <thead>
+                        <tr class="bg-teal-500 text-black">
+                            <th class="border px-4 py-2 font-semibold">Image</th>
+                            <th class="border px-4 py-2 font-semibold">Name</th>
+                            <th class="border px-4 py-2 font-semibold">Category</th>
+                            <th class="border px-4 py-2 font-semibold">Cost</th>
+                        </tr>
+                    </thead>
+                    <tbody id="contenidoTabla" class="bg-gray-900 text-white"></tbody>
+                </table>
+            </article>
+
+            <!-- Video y Statistics -->
+            <article class="col-span-2 bg-gray-900 p-6 rounded-xl shadow-lg">
+                <h2 class="text-3xl font-bold mb-6 text-teal-300 text-center">Video</h2>
+                <div id="video-container" class="mb-6">
+                    <iframe id="video-frame" class="w-full h-80 rounded-xl shadow-lg" 
+                        src="https://www.youtube.com/embed/LF9pPIi5ops?autoplay=1&mute=1&start=25" 
+                        frameborder="0" 
+                        allow="autoplay; encrypted-media" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                <h2 class="text-3xl font-bold mb-6 text-teal-300 text-center">Statistics</h2>
+                <div id="stats-container" class="mb-6"></div>
+            </article>
+
+            <!-- Skins -->
+            <article class="col-span-3 bg-gray-900 p-6 rounded-xl shadow-lg">
+                <h2 class="text-3xl font-bold mb-6 text-teal-300 text-center">Skins</h2>
+                <div id="weapon-skins" class="grid grid-cols-1 md:grid-cols-2 gap-6"></div>
+            </article>
+        </section>
+
+    </section>
+
+    <!-- Archivo JavaScript separado -->
+    <script src="../js/weapons.js" defer></script>
+
 </body>
 
 </html>

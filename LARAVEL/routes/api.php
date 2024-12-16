@@ -31,6 +31,3 @@ Route::patch("/snacks", function () {
     return "Snacks modificados";
 });
 
-// Route::delete("/snacks", function () {
-//     return "Pues ya no quedan snacks";
-// });
