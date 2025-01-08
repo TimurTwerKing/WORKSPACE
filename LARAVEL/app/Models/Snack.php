@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Snack extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        'name',
+        'brand',
+        'weight',
+        'color'
+    ];
+    
 }

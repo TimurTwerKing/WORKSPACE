@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Timurnator">
+    <meta name="keywords" content="portfolio de Timur">
+    <meta name="description" content="Mi proyecto es un portfolio en HTML5 del mundo mundial">
+    <!-- CSS para moviles -->
+    <link rel="stylesheet" media="screen and (max-width: 767px)" href="Portflolio_3.0_mobile.css">
+    <!-- CSS para tablets -->
+    <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1024px)"
+        href="Portfolio_3.0_tablet.css">
+    <!-- CSS para escritorio -->
+    <link rel="stylesheet" media="screen and (min-width: 1025px)" href="Portfolio_3.0_desktop.css">
+    <!-- CSS para modo claro y oscuro -->
+    <link rel="stylesheet" href="light-mode.css" id="light-mode-style">
+    <link rel="stylesheet" href="dark-mode.css" id="dark-mode-style" disabled>
+    <!-- JS -->
+    <script src="Portfolio_3.0.js" defer></script>
+    <title>Portfolio Timur</title>
+</head>
+
+<body>
+    <header>
+        <div class="social-media" id="header">
+            <div class="segment">
+                <a href="https://www.instagram.com/timurnator_/"><img src="img/instagram.png" alt="logo instagram"
+                        width="25"></a>
+            </div>
+            <div class="segment">
+                <a href="https://www.facebook.com/Timurnator/"><img src="img/facebook.png" alt="logo facebook"
+                        width="25"></a>
+            </div>
+            <div class="segment">
+                <a href="https://twitter.com/BogachTimur"><img src="img/tweeter.png" alt="logo tweeter" width="25"></a>
+            </div>
+            <div class="segment">
+                <a href="https://www.linkedin.com/in/timur-bogach-51939324a/"><img src="img/linkedin.png"
+                        alt="logo Linkedin" width="25"></a>
+            </div>
+
+            <label for="theme" class="theme">
+                <span class="theme__toggle-wrap">
+                    <input id="theme" class="theme__toggle" type="checkbox" role="switch" name="theme" value="dark">
+                    <!-- <span class="theme__fill"></span> -->
+                    <span class="theme__icon">
+                        <span class="theme__icon-part"></span>
+                        <span class="theme__icon-part"></span>
+                        <span class="theme__icon-part"></span>
+                        <span class="theme__icon-part"></span>
+                        <span class="theme__icon-part"></span>
+                        <span class="theme__icon-part"></span>
+                        <span class="theme__icon-part"></span>
+                        <span class="theme__icon-part"></span>
+                        <span class="theme__icon-part"></span>
+                    </span>
+                </span>
+            </label>
+        </div>
+
+        <div class="intro-text">
+            <div>
+                <p class="hello">Hello, I am</p>
+                <p class="name"><strong>Timur Bogach</strong></p>
+                <p class="profession">Future FullStack developer</p>
+            </div>
+
+            <div>
+                <article class="time-count">
+                    <h1 class="countdown">COUNTDOWN</h1>
+                    <h4 class="giveaway"></h4>
+                    <div class="deadline">
+                        <div class="deadline-format">
+                            <!-- días -->
+                            <div>
+                                <h4 class="days">34</h4>
+                                <span>days</span>
+                            </div>
+                            <!-- horas -->
+                            <div>
+                                <h4 class="hours">12</h4>
+                                <span>hours</span>
+                            </div>
+                            <!-- minutos -->
+                            <div>
+                                <h4 class="mins">45</h4>
+                                <span>mins</span>
+                            </div>
+                            <!-- segundos -->
+                            <div>
+                                <h4 class="secs">59</h4>
+                                <span>secs</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <nav class="menu">
+            <ul>
+                <div>
+                    <li><a class="nav-link" href="#header">Home</a></li>
+                    <li><a class="nav-link" href="#about">About</a></li>
+                    <li><a class="nav-link" href="#resume">Resume</a></li>
+                </div>
+                <li><img class="avatar" src="img/Avatar.png" alt="mi careto" height="100"></li>
+                <div>
+                    <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li><a class="nav-link" href="#contact">Contact</a></li>
+                    <li><a class="nav-link" href="#proyects">Proyects</a></li>
+                </div>
+            </ul>
+        </nav>
+
+        <article class="who">
+            <h2>Who am I ?</h2>
+            <h3>A Software Designer | Developer Located In Orihuela</h3>
+            <p>
+                The desire to try new things and calm the mentally ill person inside me has always made me take
+                decisions
+                that are the deepest vicious circle of regret. And this time it's no different. <br> <br>
+                I was born in October 1990 in the Soviet Union and I came with my parents in 2000 to Spain, which I have
+                considered my home since then. After finishing ESO I always knew that I ended up working in the
+                automotive world because of my father and that is why I decided to study bodywork and painting at IES
+                Palmera, but honestly I have always been drawn to computers.
+            </p>
+        </article>
+    </header>
+
+    <div class="my-grid">
+        <section class="about" id="about">
+            <article class="personal">
+                <h2>Personal Info</h2>
+                <h3>Birthdate: </h3>
+                <p> 31/10/1990</p>
+                <h3>Email: </h3>
+                <p> Timurnator_@outlook.com</p>
+                <h3>Phone: </h3>
+                <p> (+34) 658440125</p>
+                <h3>Discord: </h3>
+                <p> Timurnator</p>
+                <h3>Address: </h3>
+                <p> Elm Street 1428</p>
+            </article>
+
+            <article class="experience">
+                <h2>My Experience</h2>
+                <h3>Guitar Luthier</h3>
+                <p>I makes and repairs stringed instruments. Most luthiers specialize in working with one type of
+                    instrument. A guitar luthier has studied and trained in the art of guitar repair and construction.
+                </p>
+                <hr>
+                <h3>Custom mod computers</h3>
+                <p> I carefully assemble the chosen components, ensuring proper cable management and cooling for optimal
+                    performance and aesthetics.</p>
+                <hr>
+                <h3>Automotion Painter</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h3>Web Development</h3>
+                <p>I will develop clean code, designing software solutions, testing for quality, debugging issues,
+                    documenting processes, collaborating with teams, staying updated on technology, managing projects,
+                    and offering customer support.</p>
+                <hr>
+            </article>
+        </section>
+
+        <section class="resume" id="resume">
+            <article class="art_resume">
+                <h2>Resume</h2>
+                <div>
+                    <h3>Present 2024</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore consectetur, ex, consequuntur
+                        earum qui delectus reiciendis explicabo hic nemo quas possimus.</p>
+                    <hr>
+                </div>
+                <div>
+                    <h3>2017 - 2023</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium voluptas aliquid maxime!
+                        Enim
+                        assumenda inventore tenetur debitis, perspiciatis consequatur. Est omnis delectus eligendi?
+                        Magnam veritatis fugiat alias doloribus nam sequi.</p>
+                    <hr>
+                </div>
+                <div>
+                    <h3>2012 - 2017</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam aut nobis delectus quae eligendi
+                        debitis autem repellat perspiciatis qui vel tenetur, in modi explicabo cupiditate ipsam, optio
+                        ratione quo ab.</p>
+                </div>
+            </article>
+
+            <article class="education">
+                <h2>Education</h2>
+                <div>
+                    <h3>Present 2024</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore consectetur, ex, consequuntur
+                        earum qui delectus reiciendis explicabo hic nemo quas possimus.</p>
+                    <hr>
+                </div>
+                <div>
+                    <h3>2010 - 2014</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ipsa unde in libero? Eum beatae
+                        dolore animi rem quod consequatur. Dolorum eligendi porro acusantium vitae velit temporibus
+                        numquam labore saepe?</p>
+                    <hr>
+                </div>
+                <div>
+                    <h3>2010 - 2016</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, assumenda illo provident
+                        dignissimos culpa dolor, molestiae, distinctio voluptatem praesentium deleniti corrupti dolorem
+                        delectus et. Vel suscipit enim debitis doloremque? Quos!</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="proyects" id="proyects">
+            <article class="skills">
+                <div>
+                    <h2>Skills</h2>
+                    <p>HTML/CSS</p>
+                    <p>Java</p>
+                    <p>JS</p>
+                    <p>PHP</p>
+                    <p>MySQL</p>
+                    <p>Docker</p>
+                    <p>Git</p>
+                </div>
+                <div>
+                    <h2>Languages</h2>
+                    <p>Spanish</p>
+                    <p>Russian</p>
+                    <p>Ukranian</p>
+                    <p>English</p>
+                </div>
+            </article>
+
+            <article class="art_pro">
+                <div class="proyects_html">
+                    <li><a href="practica lmsgi/practica1.1/HOME.HTML"><img src="img_portfolio/html.jpg" alt="50"
+                                height="50"> First LMSGI</a></li>
+                    <li><a href="practica lmsgi/DRONdelCOPON/DRON.HTML"><img src="img_portfolio/html.jpg" alt="50"
+                                height="50"> DRONdelCOPON</a></li>
+                    <li><a href="practica lmsgi/Google/Google1.HTML"><img src="img_portfolio/html.jpg" alt="50"
+                                height="50"> Google page</a></li>
+                    <li><a href="practica lmsgi/Portfolio_1.0/Portfolio.HTML"><img src="img_portfolio/html.jpg" alt="50"
+                                height="50"> Portfolio 1.0</a></li>
+                    <li><a href="practica lmsgi/YouTube/YouTube.HTML"><img src="img_portfolio/html.jpg" alt="50"
+                                height="50"> Youtube page</a></li>
+                </div>
+                <div class="proyects_pdf">
+                    <li><a href="trabajos PDF/Tymur Bogach-Trabajo Tema 1 (S.I.).pdf"><img src="img_portfolio/pdf.jpg"
+                                alt="50" height="50"> System Info</a></li>
+                    <li><a href="trabajos PDF/Sistemas Informaticos 3 Tymur Bogach.pdf"><img src="img_portfolio/pdf.jpg"
+                                alt="50" height="50"> Virtual Machines</a></li>
+                    <li><a href="trabajos PDF/Clasificacion de Animales.pdf"><img src="img_portfolio/pdf.jpg" alt="50"
+                                height="50"> Animal Clasific</a></li>
+                    <li><a href="trabajos PDF/Instrucciones VirtualBox S.I. (MANUAL).pdf"><img
+                                src="img_portfolio/pdf.jpg" alt="50" height="50"> VirtualBox S.I</a></li>
+                    <li><a href="trabajos PDF/Timumr Bogach Ejercicios T4 MySQL.pdf"><img src="img_portfolio/pdf.jpg"
+                                alt="50" height="50"> MySQL </a></li>
+                </div>
+            </article>
+        </section>
+    </div>
+    <section class="contact" id="contact">
+        <article class="art_contact">
+            <form action="gestion_portfolio.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="asunto">Asunto:</label>
+                <input type="text" id="asunto" name="asunto" required><br><br>
+
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
+
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpiar</button>
+            </form>
+        </article>
+    </section>
+
+    <section class="click-counter" id="click-counter">
+        <article class="counter-container">
+            <h2>Click Counter Xtreme</h2>
+            <button id="click-button">Hit me baby!</button>
+            <p>Clicks: <span id="click-count">0</span></p>
+        </article>
+    </section>
+
+    <section>
+        <dialog id="dialog">
+            <p>Enhorabuena campeooooon!</p>
+            <form method="dialog">
+                <button>Chapar</button>
+            </form>
+        </dialog>
+    </section>
+
+</body>
+
+</html>

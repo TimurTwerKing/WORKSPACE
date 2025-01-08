@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>How_to</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Timurnator">
+  <meta name="keywords" content="primer espaguetti de Timur">
+  <meta name="description" content="Mi primera practica HTML del mundo mundial">
+  <style type="text/css">
+  </style>
+  <style>
+    table,
+    tr,
+    th,
+    td {
+      border: solid;
+    }
+  </style>
+</head>
+
+<body>
+<!--Seccion del encabezado de la pagina-->
+  <header>
+    <h1>
+      <p>LMSGI - Practica 1 - HOW TO</p>
+      <h2>
+        HTML: Texto - Enlaces - Listas - Imagenes y objetos
+
+      </h2>
+    </h1>
+  </header>
+  <!--Seccion del mapa de la pagina web-->
+  <h2>
+    Mapa WEB
+  </h2>
+  <nav>
+    <a href="http://localhost/LMSGI/practica1.1/">Home</a> |
+    <a href="http://localhost/LMSGI/practica1.2/Tabla.HTML">Listado</a>|
+    <a href="http://localhost/LMSGI/practica1.3/Formulario.HTML">Formulario</a>|
+    <a href="http://localhost/LMSGI/practica1.4/How_to.HTML">How to</a> |
+    <a href="https://www.google.es/"><img src="media/img/logo google.png" alt="icono google"
+        longdesc="El verde de la 'L' representa el crecimiento y la esperanza que transmite. El rojo presente en una de las 'O' y en la 'E' hace referencia a la fuerza y a la pasión que pusieron sus fundadores. Por lo que respecta al amarillo de la otra 'O', es el color representante de la energía, la inteligencia y la felicidad."
+        width="50" height="25"></a>
+  </nav>
+  <main>
+    <!--Etiquetas basicas-->
+
+    <table>
+
+      <caption><strong>
+          <center>
+            <h1>&lt;<em>Video</em>
+              <sup>de</sup>
+              <sub>Youtube</sub>&gt;
+            </h1>
+          </center>
+        </strong></caption>
+      <caption>
+
+        <!--Archivo Multimedia-->
+        <td>
+          <audio
+            src="media/audio/Slayer Angel of Death scream (when you accidentally step on a lego) Reign in blood album version.mp3"
+            controls></audio>
+          <video src="media/video/Dimebag Darrell Amazing Shred.mp3" controls></video>
+        </td>
+      </caption>
+
+      <!--Video Youtube-->
+
+      <caption>
+      <tr>
+        <td>
+          <iframe width="604" height="310 "
+            src="https://www.youtube.com/embed/M-5c_aR_feE?si=XwUa3qg7KL7dWTbiautoplay=1" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </td>
+      </tr>
+      </caption>
+    </table>
+    <br><br>
+    <!--Reseña-->
+    <form action="gestion.php" method="post">
+      <footer>
+        <h2>
+          <label>&gt;Molanometro&lt;</label>
+          <select id="so" name="so" required>
+            <option value="Mucho">Mucho</option>
+            <option value="No esta mal">No esta mal</option>
+            <option value="Ni fu ni fa">Ni fu ni fa</option>
+            <option value="Meh">Meh</option>
+            <option value="Una mierda">Una mierda</option>
+          </select>
+        </h2>
+      </footer>
+      <input type="submit" value="Enviar">
+    </form>
+  </main>
+</body>
+
+</html>

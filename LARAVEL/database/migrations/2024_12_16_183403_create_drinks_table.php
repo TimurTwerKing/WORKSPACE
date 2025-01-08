@@ -8,13 +8,15 @@ return new class extends Migration {
     /**
      * Run the migrations.
      */
-    public function up(): void
+   
+    public function up()
     {
         Schema::create('drinks', function (Blueprint $table) {
             $table->id();
-            $table->string('name', 32);
-            $table->string('brand', 10);
-            $table->integer('weight')->nullable();
+            $table->string('name',32);
+            $table->string('brand',32); 
+            $table->decimal('ml', 5, 2); 
+            $table->decimal('price', 8, 2); 
             $table->timestamps();
         });
     }

@@ -1,0 +1,95 @@
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+.descripcion1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.descripcion2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.descripcion3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+.titulo2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+.descripcion4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.descripcion5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+.titulo3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+.descripcion6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.descripcion7{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.descripcion8{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen_tienda{
+    display: flex;
+    margin-left: 480px;
+}

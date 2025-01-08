@@ -20,12 +20,27 @@ class DrinkController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
-            'name' => 'required|string|max:32',
-            'brand' => 'required|string|max:32',
-            'weight' => 'nullable|integer'
-        ]);
 
+    }
+
+    public function create(Request $request)
+    {
+        $data = $request->validate([
+            'name' => 'required|min:3',
+            'brand' => 'required|max:20',
+            'ml' => 'required|numeric|gt:0',
+            'price' => 'required|numeric|gt:0'
+        ]);
+        $drink = Drink::create($data);
+
+        return response()->json(["todo guay", $drink], 201);
+    }
+
+    public function getById(Request $request, $id)
+    {
+        $drink = Drink::findOrFail($id);
+
+        return response()->json(["todo guay", $drink], 200);
     }
 
     /**

@@ -1,25 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
+<nav class="bg-gray-200 dark:bg-gray-800 p-1 shadow-md flex justify-between items-center rounded-md overflow-x-auto">
+  <ul class="flex flex-nowrap space-x-4 sm:space-x-6">
+    <li>
+      <a href="index.html" class="text-indigo-600 dark:text-pink-400 hover:text-indigo-800 dark:hover:text-pink-300 px-3 py-2 rounded-md">Main</a>
+    </li>
+    <li>
+      <a href="agents.html" class="text-indigo-600 dark:text-pink-400 hover:text-indigo-800 dark:hover:text-pink-300 px-3 py-2 rounded-md">Agents</a>
+    </li>
+    <li>
+      <a href="maps.html" class="text-indigo-600 dark:text-pink-400 hover:text-indigo-800 dark:hover:text-pink-300 px-3 py-2 rounded-md">Maps</a>
+    </li>
+    <li>
+      <a href="weapons.html" class="text-indigo-600 dark:text-pink-400 hover:text-indigo-800 dark:hover:text-pink-300 px-3 py-2 rounded-md">Weapons</a>
+    </li>
+  </ul>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Menú de Navegación</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="../js/nav.js" defer></script>
-</head>
-
-<body class="bg-gray-800 text-white">
-
-  <nav class="bg-gray-900 p-4 shadow-md">
-    <ul class="flex space-x-4">
-      <li><a href="index.html" class="text-white hover:text-yellow-300 px-3 py-2 rounded-md">Main</a></li>
-      <li><a href="heroes.html" class="text-white hover:text-yellow-300 px-3 py-2 rounded-md">Heroes</a></li>
-      <li><a href="maps.html" class="text-white hover:text-yellow-300 px-3 py-2 rounded-md">Maps</a></li>
-      <li><a href="weapons.html" class="text-white hover:text-yellow-300 px-3 py-2 rounded-md">Weapons</a></li>
-    </ul>
-  </nav>
-  <script src="../js/fetch.js"></script>
-</body>
-
-</html>
+  <button id="theme-toggle" class="bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-gray-100 px-4 py-2 rounded-md hover:bg-gray-400 dark:hover:bg-gray-600">
+    🌓
+  </button>
+</nav>

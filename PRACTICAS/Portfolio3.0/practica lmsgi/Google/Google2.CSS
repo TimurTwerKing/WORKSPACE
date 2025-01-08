@@ -1,0 +1,142 @@
+/*DA EL PEGO PERO ESTOY SEGURO QUE LOS METODOS NO SON LOS CORRECTOS, PEERDON!*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Estilo general */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    background-color: #202124;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+/* Estilo de cabezera */
+header {
+    background-color: #202124;
+    padding: 10px;
+}
+
+.up {
+    display: flex;
+    justify-content: space-between;
+}
+
+.up1 {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.up2 {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Estilo del contenido principal */
+main {
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 250px;
+    padding-top: 140px;
+}
+
+h1 {
+    color:white;
+    font-size:85px;
+    font-weight: 110;
+    margin-bottom: 20px;
+}
+
+nav input {
+    margin-bottom: 30px;
+}
+
+input {
+    background-color: #202124;
+    border: 1px solid gray;
+    border-radius: 24px;
+    height: 41px;
+    padding: 0;
+    width: 70vh;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.caja1 {
+    width: 150px;
+    height: 15px;
+    background-color: #303134;
+    padding: 12px;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+.caja2 {
+    width: 150px;
+    height: 15px;
+    background-color: #303134;
+    padding: 12px;
+    border-radius: 4px;
+    margin-left: 5px;
+}
+
+.cajas{
+    display:flex;
+    justify-content: center;
+    padding: 5px;
+    padding-bottom: 30px;
+}
+
+.of{
+    color: white;
+    display:flex;
+    justify-content: center;
+    align-items: baseline;   
+}
+
+ .of a{
+    padding-left: 8px;
+    color:#79a5f3;   
+  
+}
+
+/* Estilo del pie de pagina */
+footer {
+    
+    background-color: #171717;
+    padding: 10px 20px;
+    color: white;
+    
+}
+
+.esp {
+    width: 150px;
+    height: 25px;
+    display:flex;
+    margin-bottom: 5px;
+    color: white;
+    margin-bottom: 20px;
+    
+}
+  
+.last {
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    justify-content: space-between;
+}
+
+div.mid {
+justify-content: center;
+display: flex;
+margin-right: 50px;
+width: 650px;
+}

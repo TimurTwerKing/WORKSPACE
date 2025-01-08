@@ -1,0 +1,61 @@
+:root {
+    --bg-light: #e8e8e8;
+    --text-light: #000;
+    --text-shadow-light: 1px 1px 2px #dd4272, 0 0 1em rgba(0, 0, 255, 0.881), 0 0 0.2em blue;
+}
+
+/* Estilos generales del body en modo claro */
+body.light-mode {
+    background-color: var(--bg-light);
+    color: var(--text-light);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.intro-text {
+    color: var(--text-light);
+}
+.intro-text p{
+    color: #fff;
+}
+
+.name {
+    color: #fff;
+    text-shadow: var(--text-shadow-light);
+}
+
+.profession {
+    text-shadow: 1px 1px 2px #dd4272, 0 0 1em #4d88ac, 0 0 0.2em #4d88ac;
+}
+
+.menu .nav-link {
+    color: #fff;
+    text-shadow: var(--text-shadow-light);
+}
+
+.who {
+    background-color: var(--bg-light);
+}
+
+.my-grid {
+    background-color: var(--bg-light);
+}
+
+form {
+    background-color: var(--bg-light);
+}
+
+.click-counter {
+    background-color: var(--bg-light);
+}
+
+h2 {
+    color: var(--text-light);
+}
+
+h3 {
+    color: var(--text-light);
+}
+
+p {
+    color: var(--text-light);
+}

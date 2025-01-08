@@ -25,7 +25,7 @@ class SnackController extends Controller
         $params = $request->validate([
             "name" => "required|min:3",
             "brand" => "required|max:10",
-            "weight" => "required|gt:5|lt:25",
+            "weight" => "required|gte:5|lte:25",
             "color" => "required|in:amarillo,rojo,verde"
         ]);
 

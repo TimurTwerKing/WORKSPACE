@@ -1,6 +1,7 @@
 <?php
 
 namespace Database\Seeders;
+use App\Models\Drink;
 use DB;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -12,15 +13,15 @@ class DrinkSeeder extends Seeder
      */
     public function run(): void
     {
-        // Snack::factory(9999)->create();
+        // Drink::factory(10)->create();
 
-        for ($i = 0; $i < 10; $i++) {
-            DB::table("drinks")->insert([
-                "name" => fake()->name(),
-                "brand" => fake()->text(10),
-                "ml" => rand(0.33, 2),
-            ]);
-        }
-
+        Drink::factory()->create([
+            "name" => fake()->word(),
+            "brand" => fake()->company(),
+            "ml" => fake()->randomFloat(2, 0.33, 2),
+            "price" => fake()->randomFloat(2, 0.50, 10),
+        ]);
     }
+
 }
+

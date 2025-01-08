@@ -17,7 +17,10 @@ class DrinkFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'name' => $this->faker->word(),
+            'brand' => $this->faker->company(),
+            'ml' => $this->faker->randomFloat(2, 0.33, 2),
+            'price' => $this->faker->randomFloat(2, 0.50, 10)
         ];
     }
 }

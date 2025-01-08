@@ -1,0 +1,258 @@
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* parte del header con la barra de navegación  de adrian*/
+header nav ul{
+  list-style: none;
+  color: white;
+  padding: 0;
+  text-align: center;
+  margin: 0;
+}
+
+header nav ul li{
+  display: inline-block;
+  padding: 20px;
+  margin-right: 15px;
+}
+header nav ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+.icono-dron{
+  width: 90px;
+  height: 90px;
+  align-content: flex-end;
+  float: left;
+  margin-left: 30px;
+  margin-top: -10px;
+}
+.bi-person-circle{
+  float: right;
+  margin-right: 20px;
+  margin-top: 10px;
+  font-size: 30px;
+}
+
+/* descripcion de cada parte de la pagina web de cristina */ 
+
+main {
+  display: grid;
+  grid-template-columns: repeat 1fr;
+  grid-gap: 20px;
+  padding: 0px;
+}
+section {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+/* parte del section con el contenido de la primera pagina */
+
+section .content{
+  grid-area: content;
+}
+section .content h2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(216, 239, 255);
+}
+section .content h3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:solid black;
+}
+h2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-weight: bold;
+  font-size: 50px;
+}
+.home{
+  background-image: url(images/fondo2.jpeg);
+  background-size: cover;
+}
+.home h2{
+  font-size: 200px;
+  color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: black;
+}
+.home p{
+  font-size: 60px;
+}
+/* parte de las tarifas con las cards */
+.tarifas {
+  display: grid;
+  grid-template-columns: repeat(3, 0.4fr);
+  align-items: center;
+  justify-content: space-around;
+  grid-template-areas: "card1 card2 card3";
+  margin-bottom: 15px;
+  background-image: url(images/fondo3.jpeg);
+  background-size: cover;
+}
+.tarifas .card1{
+  grid-area: card1;
+  border: 2px solid black;
+  border-radius: 10%;
+  text-align: center;
+  background-color:white;
+}
+.tarifas .card2{
+  grid-area: card2;
+  border: 2px solid black;
+  border-radius: 10%;
+  text-align: center;
+  background-color: white;
+}
+.tarifas .card3{
+  grid-area: card3;
+  border: 2px solid black;
+  border-radius: 10%;
+  text-align: center;
+  background-color: white;
+}
+
+/* parte de las preguntas y respuestas  */
+.contPregs{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+}
+.contpreg{
+  background: #f2f2f2;
+  padding: 10px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid black;
+}
+.contpreg .pregunta{
+  font-weight: bold;
+}
+
+/* parte del formulario */
+.contform{
+  border: 2px solid black;
+  -webkit-box-shadow:25px 4px 90px 10px rgba(9,75,92,0.65);
+  -moz-box-shadow: 25px 4px 90px 10px rgba(9,75,92,0.65);
+  box-shadow: 25px 4px 90px 10px rgba(9,75,92,0.65);
+}
+.formul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(images/fondo3.jpeg);
+  background-size: cover;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  border: blue;
+}
+input[type=text], textarea {
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+box-sizing: border-box;
+border: 2px solid #ccc;
+border-radius: 4px;
+resize: none;
+}
+input[type=submit] {
+background-color: #4CAF50;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+input[type=submit]:hover {
+background-color: #45a049;
+}
+.contform {
+border-radius: 5px;
+background-color: #f2f2f2;
+padding: 20px;
+width: 50%;
+}
+
+/* parte del footer de david */
+footer{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+footer .contenedor{
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.footer{
+  background-color: rgb(84, 83, 83);
+  padding: 80px 0;
+}
+footer .footer-fila{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer .links{
+  width: 25%;
+  padding: 0;
+}
+
+footer .links h4{
+  font-size: 22px;
+  color: #FFFFFF;
+  margin-bottom: 25px;
+  font-weight: 500;
+  display: inline-block;
+}
+footer .links ul li a{
+  font-size: 18px;
+  color: #BBBBBB;
+  display: block;
+  margin-bottom: 15px;
+}
+footer .link-redes-sociales a{
+  display: inline-block;
+  min-height: 40px;
+  width: 40px;
+  background-color: grey;
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: white;
+}

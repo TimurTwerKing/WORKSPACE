@@ -1,0 +1,719 @@
+/* -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-ESTILO GLOBAL */
+* {
+    padding: 0;
+    margin: 0;
+    background-color: #0f0f0f;
+    font-size: 15px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+/* -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-PAGINA GENERAL */
+.contenedor {
+    width: 100%;
+    min-height: 100vh;
+    max-height: 100vh;
+    margin: auto auto;
+    display: grid;
+    grid-template-columns: 15% auto;
+    grid-template-rows: 70px auto;
+    grid-template-areas: "header header"
+        "barra main";
+
+}
+
+
+
+/* -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-CABEZA */
+.header {
+    margin-top: -10px;
+    grid-area: header;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    justify-content: space-between;
+    grid-template-areas: "head search cuenta";
+
+}
+
+
+
+/* -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-CABEZA IZQUIERDA */
+.header .head {
+    grid-area: head;
+    display: flex;
+    align-items: center;
+}
+
+.header .head .menu {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 100px;
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.header .head .menu:hover {
+    background: #e7e7e7;
+}
+
+.header .head .logo {
+    padding-top: 7px;
+    cursor: pointer;
+}
+
+
+
+/* -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-CABEZA CENTRAL */
+.header .search {
+    grid-area: search;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .search input {
+    height: 30px;
+    min-width: 150%;
+    padding: 0 15px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.header .search .lupa {
+    padding: 0 15px;
+    margin-top: 10px;
+    border-radius: 100px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.header .search .lupa:hover {
+    background: #e7e7e7;
+}
+
+.header .search .voz {
+    padding: 0 15px;
+    margin-top: 10px;
+    border-radius: 100px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+
+
+/* -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-CABEZA DERECHA */
+.header .cuenta {
+    grid-area: cuenta;
+    display: flex;
+    align-items: center;
+}
+
+.header .cuenta .crear {
+    padding: 0 15px;
+    margin-top: 10px;
+    border-radius: 100px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.header .cuenta .bell {
+    padding: 0 15px;
+    margin-top: 10px;
+    border-radius: 100px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.header .cuenta .user {
+    padding: 0 15px;
+    margin-top: 10px;
+    border-radius: 100px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+
+
+/* -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-BARRA LATERAL GENERAL*/
+.barra {
+    grid-area: barra;
+    background-color: #545454;
+}
+
+
+
+/* -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-BARRA LATERAL PRIMERO */
+.barra .first {
+    display: block;
+    padding: 20px 15px;
+}
+
+.barra .first .inicio {
+    padding: 10px 0px;
+    border: 1px;
+    cursor: pointer;
+}
+
+.barra .first .inicio:hover {
+    border-radius: 10px;
+    background-color: #272727;
+}
+
+.barra .first .inicio i {
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.barra .first .shorts {
+    padding: 10px 0;
+    border: 1px;
+    cursor: pointer;
+}
+
+.barra .first .shorts:hover {
+    border-radius: 10px;
+    background-color: #272727;
+}
+
+.barra .first .shorts i {
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.barra .first .sus {
+    padding: 10px 0;
+    border: 1px;
+    cursor: pointer;
+}
+
+.barra .first .sus:hover {
+    border-radius: 10px;
+    background-color: #272727;
+}
+
+.barra .first .sus i {
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+
+
+/* -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-BARRA LATERAL SEGUNDO */
+.barra .tuespacio {
+    margin-top: -17px;
+    display: block;
+    padding: 15px 15px;
+}
+
+.barra .tuespacio .tu {
+    padding: 10px 0;
+    border: 1px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.barra .tuespacio .tu:hover {
+    border-radius: 10px;
+    background-color: #272727;
+}
+
+.barra .tuespacio .tu i {
+    margin-left: 5px;
+}
+
+.barra .tuespacio .canal {
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.barra .tuespacio .canal:hover {
+    border-radius: 10px;
+    background-color: #272727;
+}
+
+.barra .tuespacio .canal i {
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.barra .tuespacio .historial {
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.barra .tuespacio .historial:hover {
+    border-radius: 10px;
+    background-color: #272727;
+}
+
+.barra .tuespacio .historial i {
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.barra .tuespacio .videos {
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.barra .tuespacio .videos:hover {
+    border-radius: 10px;
+    background-color: #272727;
+}
+
+.barra .tuespacio .videos i {
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.barra .tuespacio .tarde {
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.barra .tuespacio .tarde:hover {
+    border-radius: 10px;
+    background-color: #272727;
+}
+
+.barra .tuespacio .tarde i {
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.barra .tuespacio .mas {
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.barra .tuespacio .mas:hover {
+    border-radius: 10px;
+    background-color: #272727;
+}
+
+.barra .tuespacio .mas i {
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+
+
+/* -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-BARRA LATERAL TERCERO */
+.barra .suscripciones {
+    margin-top: 1.5px;
+    display: block;
+    padding: 15px 15px;
+}
+
+.barra .suscripciones .guit {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.barra .suscripciones .guit:hover {
+    border-radius: 10px;
+    background-color: #272727;
+}
+
+.barra .suscripciones .guit img {
+    margin-right: 20px;
+    margin-left: 10px;
+
+}
+
+.barra .suscripciones .doom {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.barra .suscripciones .doom:hover {
+    border-radius: 10px;
+    background-color: #272727;
+}
+
+.barra .suscripciones .doom img {
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.barra .suscripciones .black {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.barra .suscripciones .black:hover {
+    border-radius: 10px;
+    background-color: #272727;
+}
+
+.barra .suscripciones .black img {
+    margin-right: 20px;
+    margin-left: 10px;
+
+}
+
+.barra .suscripciones .stoner {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.barra .suscripciones .stoner:hover {
+    border-radius: 10px;
+    background-color: #272727;
+}
+
+.barra .suscripciones .stoner img {
+    margin-right: 20px;
+    margin-left: 10px;
+
+}
+
+.barra .suscripciones .linux {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.barra .suscripciones .linux:hover {
+    border-radius: 10px;
+    background-color: #272727;
+}
+
+.barra .suscripciones .linux img {
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.barra .suscripciones .baity {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.barra .suscripciones .baity:hover {
+    border-radius: 10px;
+    background-color: #272727;
+}
+
+.barra .suscripciones .baity img {
+    margin-right: 20px;
+    margin-left: 10px;
+
+}
+
+.barra .suscripciones .optimum {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.barra .suscripciones .optimum:hover {
+    border-radius: 10px;
+    background-color: #272727;
+}
+
+.barra .suscripciones .optimum img {
+    margin-right: 20px;
+    margin-left: 10px;
+
+}
+
+.barra .suscripciones .der8auer {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.barra .suscripciones .der8auer:hover {
+    border-radius: 10px;
+    background-color: #272727;
+}
+
+.barra .suscripciones .der8auer img {
+    margin-right: 20px;
+    margin-left: 10px;
+
+}
+
+.barra .suscripciones .sus_mas {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.barra .suscripciones .sus_mas:hover {
+    border-radius: 10px;
+    background-color: #272727;
+}
+
+.barra .suscripciones .sus_mas i {
+    margin-right: 20px;
+    margin-left: 10px;
+
+}
+
+
+
+/* -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-CONTENIDO PRINCIPAL */
+.main {
+    grid-area: main;
+    background-color: #0f0f0f;
+}
+
+
+
+/* -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-CONTENIDO PRINCIPAL RECOMENDADOS GENERAL */
+.main .recomend {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+/* -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-CONTENIDO PRINCIPAL RECOMENDADOS */
+.main .recomend .todo {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px;
+    background-color: #ccc;
+    cursor: pointer;
+    color: #0f0f0f;
+}
+
+.main .recomend .musica {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px;
+    background-color: #2d2d2d;
+    cursor: pointer;
+}
+
+.main .recomend .musica:hover {
+    background-color: #3f3f3f;
+}
+
+.main .recomend .albumes {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px;
+    background-color: #2d2d2d;
+    cursor: pointer;
+}
+
+.main .recomend .albumes:hover {
+    background-color: #3f3f3f;
+}
+
+.main .recomend .videojuegos {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px;
+    background-color: #2d2d2d;
+    cursor: pointer;
+}
+
+.main .recomend .videojuegos:hover {
+    background-color: #3f3f3f;
+}
+
+.main .recomend .mixes {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px;
+    background-color: #2d2d2d;
+    cursor: pointer;
+}
+
+.main .recomend .mixes:hover {
+    background-color: #3f3f3f;
+}
+
+.main .recomend .distorsion {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px;
+    background-color: #2d2d2d;
+    cursor: pointer;
+}
+
+.main .recomend .distorsion:hover {
+    background-color: #3f3f3f;
+}
+
+.main .recomend .hardware {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px;
+    background-color: #2d2d2d;
+    cursor: pointer;
+}
+
+.main .recomend .hardware:hover {
+    background-color: #3f3f3f;
+}
+
+.main .recomend .cuerdas {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px;
+    background-color: #2d2d2d;
+    cursor: pointer;
+}
+
+.main .recomend .cuerdas:hover {
+    background-color: #3f3f3f;
+}
+
+.main .recomend .debates {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px;
+    background-color: #2d2d2d;
+    cursor: pointer;
+}
+
+.main .recomend .debates:hover {
+    background-color: #3f3f3f;
+}
+
+.main .recomend .directo {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px;
+    background-color: #2d2d2d;
+    cursor: pointer;
+}
+
+.main .recomend .directo:hover {
+    background-color: #3f3f3f;
+}
+
+.main .recomend .hackers {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px;
+    background-color: #2d2d2d;
+    cursor: pointer;
+}
+
+.main .recomend .hackers:hover {
+    background-color: #3f3f3f;
+}
+
+.main .recomend .historia {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px;
+    background-color: #2d2d2d;
+    cursor: pointer;
+}
+
+.main .recomend .historia:hover {
+    background-color: #3f3f3f;
+}
+
+.main .recomend .programacion {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px;
+    background-color: #2d2d2d;
+    cursor: pointer;
+}
+
+.main .recomend .programacion:hover {
+    background-color: #3f3f3f;
+}
+
+.main .recomend .potcast {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px;
+    background-color: #2d2d2d;
+    cursor: pointer;
+}
+
+.main .recomend .potcast:hover {
+    background-color: #3f3f3f;
+}
+
+.main .recomend .doom {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px;
+    background-color: #2d2d2d;
+    cursor: pointer;
+}
+
+.main .recomend .doom:hover {
+    background-color: #3f3f3f;
+}
+
+.main .recomend .comedia {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px;
+    background-color: #2d2d2d;
+    cursor: pointer;
+}
+
+.main .recomend .comedia:hover {
+    background-color: #3f3f3f;
+}
+
+.main .recomend i {
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+
+/* -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-CONTENIDO PRINCIPAL VIDEOS  */
+
+.main .videos {
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+
+/* -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-CONTENIDO PRINCIPAL VIDEOS  */
+p,
+u {
+    font-size: small;
+    color: #858585;
+    cursor: pointer;
+}
+
+p:hover,
+u:hover {
+    font-size: small+1;
+    color: #dedede;
+}

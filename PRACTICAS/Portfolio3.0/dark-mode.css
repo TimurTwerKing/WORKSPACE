@@ -1,0 +1,57 @@
+:root {
+    --bg-dark: rgb(36, 38, 45);
+    --text-dark: #fff;
+    --text-shadow-dark: 1px 1px 2px #dd4272, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+/* Estilos generales del body en modo oscuro */
+body.dark-mode {
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.intro-text {
+    color: var(--text-dark);
+}
+
+.name {
+    text-shadow: 1px 1px 2px #dd4272, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+.profession {
+    text-shadow: 1px 1px 2px #dd4272, 0 0 1em #4d88ac, 0 0 0.2em #4d88ac;
+}
+
+.menu .nav-link {
+    color: var(--text-dark);
+    text-shadow: 1px 1px 2px #dd4272, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+.who {
+    background-color: var(--bg-dark);
+}
+
+.my-grid {
+    background-color: var(--bg-dark);
+}
+
+form {
+    background-color: var(--bg-dark);
+}
+
+.click-counter {
+    background-color: var(--bg-dark);
+}
+
+h2 {
+    color: var(--text-dark);
+}
+
+h3 {
+    color: var(--text-dark);
+}
+
+p {
+    color: var(--text-dark);
+}

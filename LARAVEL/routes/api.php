@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DrinkController;
 use App\Http\Middleware\Autentificador;
 use App\Http\Controllers\ShopController;
 use App\Http\Controllers\SnackController;
@@ -31,3 +32,5 @@ Route::patch("/snacks", function () {
     return "Snacks modificados";
 });
 
+Route::post("/drinks", [DrinkController::class, "create"]);
+Route::get("/drinks", [DrinkController::class, "getById"]);

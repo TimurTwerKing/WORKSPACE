@@ -5,7 +5,7 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Model>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Snack>
  */
 class SnackFactory extends Factory
 {
@@ -17,10 +17,10 @@ class SnackFactory extends Factory
     public function definition(): array
     {
         return [
-            "name" => fake()->name(),
-            "brand" => fake()->text(10),
+            "name" => $this->faker->name(),
+            "brand" => $this->faker->text(10),
             "weight" => rand(5, 25),
-            "color" => fake()->randomElement(["amarillo", "verde", "rojo"])
+            "color" => $this->faker->randomElement(["amarillo", "verde", "rojo"])
         ];
     }
 }

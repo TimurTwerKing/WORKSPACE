@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Formulario</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Timurnator">
+    <meta name="keywords" content="primer espaguetti de Timur">
+    <meta name="description" content="Mi primera practica HTML del mundo mundial">
+    <style type="text/css">
+    </style>
+</head>
+
+<body>
+<!--Seccion del encabezado de la pagina-->
+    <header>
+        <h1>
+            <p>LMSGI - Practica 1 - FORMULARIO</p>
+            <h2>
+                HTML: Texto - Enlaces - Listas - Imagenes y objetos
+            </h2>
+        </h1>
+    </header>
+<!--Seccion del mapa de la pagina web-->
+    <h2>
+        Mapa WEB
+    </h2>
+    <nav>
+        <a href="http://localhost/LMSGI/practica1.1/">Home</a> |
+        <a href="http://localhost/LMSGI/practica1.2/Tabla.HTML">Listado</a>|
+        <a href="http://localhost/LMSGI/practica1.3/Formulario.HTML">Formulario</a>|
+        <a href="http://localhost/LMSGI/practica1.4/How_to.HTML">How to</a> |
+        <a href="https://www.google.es/"><img src="media/img/logo google.png" alt="icono google"
+                longdesc="El verde de la 'L' representa el crecimiento y la esperanza que transmite. El rojo presente en una de las 'O' y en la 'E' hace referencia a la fuerza y a la pasión que pusieron sus fundadores. Por lo que respecta al amarillo de la otra 'O', es el color representante de la energía, la inteligencia y la felicidad."
+                width="50" height="25"></a>
+    </nav>
+    <main>
+<!--Titulo del contenido-->
+        <h1>Formulario</h1>
+<!--Formulario1 datos personales-->
+        <form action="gestion.php" method="post">
+            <fieldset>
+                <legend>Datos personales</legend>
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="nombre" required><br><br>
+
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" placeholder="apellidos" required><br><br>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}" placeholder="ej: 658440125"
+                    required><br><br>
+            </fieldset>
+<!--Formulario2 otros datos-->
+            <fieldset>
+                <legend>Otros datos</legend>
+<!--seccion de elegir genero-->
+                <label>Genero:</label>
+                <input type="radio" name="genero" value="Hombre" checked required>
+                <label for="hombre">Hombre</label>
+                <input type="radio" name="genero" value="Mujer" required>
+                <label for="mujer">Mujer</label><br><br>
+
+ <!--seccion de elegir gustos-->
+                <label>Intereses:</label>
+                <input type="checkbox" name="intereses[]" value="Música">
+                <label for="musica">Música</label>
+                <input type="checkbox" name="intereses[]" value="Juegos">
+                <label for="juegos">Juegos</label><br><br>
+
+<!--seccion elegir sistema operativo-->
+                <label for="so">Sistema Operativo:</label>
+                <select id="so" name="so" required>
+                    <option value="Windows">Windows</option>
+                    <option value="macOS">macOS</option>
+                    <option value="Linux">Linux</option>
+                    <option value="Otro">Otro</option>
+                </select><br><br>
+
+<!--seccion subir archivos-->
+                <label>Subir archivo:</label>
+                <input type="file" name="archivo" accept="image/*" required>
+                <input type="file" name="archivos-multiples" accept=".pdf" multiple required>
+                <br><br>
+<!--Parte de textarea-->
+                <textarea id="observaciones" name="observaciones" rows="10" cols="80"
+                    placeholder="Observaciones"></textarea><br><br>
+
+
+                <script>
+                    document.getElementById("archivo").addEventListener("change", function () {
+                        var nombreArchivo = this.files[0].name;
+                        document.getElementById("nombre-archivo").textContent = nombreArchivo;
+                    });
+                </script>
+<!--seccion de limpiar y enviar el formulario-->
+                <footer>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpiar">
+                </footer>
+            </fieldset>
+
+        </form>
+    </main>
+</body>
+
+</html>
