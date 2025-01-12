@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\DrinkController;
+use App\Http\Controllers\ToyController;
 use App\Http\Middleware\Autentificador;
 use App\Http\Controllers\ShopController;
 use App\Http\Controllers\SnackController;
@@ -20,6 +21,9 @@ Route::controller(SnackController::class)->prefix("/snacks")->group(function () 
 });
 
 Route::apiResource("/shops", ShopController::class); //igual que arriba pero sin poder "personalizar get,post etc"
+Route::apiResource("/drinks", DrinkController::class); //igual que arriba pero sin poder "personalizar get,post etc"
+Route::apiResource("/snaks", SnackController::class); //igual que arriba pero sin poder "personalizar get,post etc"
+Route::apiResource("/toys", ToyController::class); //igual que arriba pero sin poder "personalizar get,post etc"
 
 Route::get("/snacks/{id}", function ($id) {
     return "Snack ID: " . $id;
