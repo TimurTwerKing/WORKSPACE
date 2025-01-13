@@ -1,0 +1,9 @@
+<div>
+    <div><img width="150" [src]="house.photo" alt=""></div>
+    <p>{{ house.name }} - {{ house.city }}</p>
+    <p>{{house.meters}} metros</p>
+    <label>
+        Wifi
+        <input [checked]="house.wifi" type="checkbox" disabled>
+    </label>
+</div>

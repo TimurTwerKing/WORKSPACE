@@ -1,6 +1,12 @@
-<!-- <p>home-component works!</p> -->
-
-<input type="text" placeholder="Filtrar por ciudad...">
-<button (click)>
-    <img width="50" [src]="img/lupa.png">
-</button>
+<form action="">
+    <input type="text" placeholder="Filtrar por ciudad">
+    <button>Buscar</button>
+</form>
+<div>
+    <app-housing-location
+        [house]="house"
+    ></app-housing-location>
+    <app-housing-location
+        [house]="house2"
+    ></app-housing-location>
+</div>

@@ -1,11 +1,31 @@
 import { Component } from '@angular/core';
+import { HousingLocationComponent } from '../housing-location/housing-location.component';
+import { HousingLocation } from '../housing-location';
 
 @Component({
   selector: 'app-home-component',
-  imports: [],
+  standalone: true,
+  imports: [HousingLocationComponent],
   templateUrl: './home-component.component.html',
   styleUrl: './home-component.component.css'
 })
 export class HomeComponentComponent {
   
+  public house: HousingLocation = {
+    id: 1,
+    name: "Casa bonita",
+    city: "Ciudad bonita",
+    photo: "https://media.v2.siweb.es/uploaded_thumb_big/9fb7c789c323c64d5c4e4fcb00491d67/post_1_abril_penthouses.jpg",
+    wifi: true,
+    meters: 200
+  }
+
+  public house2: HousingLocation = {
+    id: 2,
+    name: "Casa no tan bonita",
+    city: "Ciudad no tan bonita",
+    photo: "https://www.yaencontre.com/noticias/wp-content/uploads/2014/10/penthouse2.jpg",
+    wifi: false,
+    meters: 100
+  }
 }
