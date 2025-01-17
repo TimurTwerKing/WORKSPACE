@@ -11,5 +11,5 @@ import { HousingLocation } from '../housing-location';
 export class HousingLocationComponent {
 
   @Input() house!: HousingLocation;
- 
+
 }

@@ -3,10 +3,7 @@
     <button>Buscar</button>
 </form>
 <div>
-    <app-housing-location
-        [house]="house"
-    ></app-housing-location>
-    <app-housing-location
-        [house]="house2"
-    ></app-housing-location>
+@for(let house of houses){
+    <app-housing-location [house]="house"></app-housing-location>
+}
 </div>
