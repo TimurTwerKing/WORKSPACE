@@ -1,4 +1,5 @@
-<div>
+@if (house){
+   <div>
     <div><img width="150" [src]="house.photo" alt=""></div>
     <p>{{ house.name }} - {{ house.city }}</p>
     <p>{{house.meters}} metros</p>
@@ -6,4 +7,5 @@
         Wifi
         <input [checked]="house.wifi" type="checkbox" disabled>
     </label>
-</div>
+</div> 
+}
